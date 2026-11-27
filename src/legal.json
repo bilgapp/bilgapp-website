@@ -1,0 +1,119 @@
+{
+  "privacy": {
+    "title": "Privacy policy",
+    "intro": "How Multiplying Panda handles game progress, purchases, and information shared with us. Written for parents and guardians as well as other users.",
+    "sections": [
+      [
+        "who-we-are",
+        "1. Who we are",
+        "<p>This policy covers the Multiplying Panda mobile app and this companion website. The app’s operator and privacy contact are listed below.</p>{{operator}}<p>For children, a parent or guardian should review this policy and handle privacy enquiries and purchases.</p>"
+      ],
+      [
+        "game-progress",
+        "2. Game progress and settings",
+        "<p>The app saves practice progress on your device. This includes answers and practice sessions, stars, hearts, panda happiness, trophies, accessory selections, and preferences such as language, sound, difficulty, and reminders.</p><p>These game records are not uploaded by the app to a developer-operated game server. There is no app account or social profile, and no app-managed cloud sync. Device or operating-system backups may still apply. The Android app disables app-data backup and device transfer; iOS backups depend on your device settings.</p>"
+      ],
+      [
+        "purchase-processing",
+        "3. Purchases and RevenueCat",
+        "<p>Apple’s App Store or Google Play processes payments. The app uses RevenueCat to validate purchases, restore eligible purchases, and determine whether Panda Pro is available to you.</p><p>RevenueCat generates an anonymous app user identifier. Purchase-related processing can include receipts or purchase tokens, product and transaction information, entitlement status, currency or locale, and technical information such as device type and operating system. The SDK may contact RevenueCat when the app starts or resumes, even if you do not make a new purchase.</p><p>This information supports purchase functionality, purchase-service reporting, and fraud prevention. The app does not ask you to provide payment-card details to the developer. Apple, Google, and RevenueCat process information under their own terms and privacy arrangements.</p><p>Read <a href=\"https://www.revenuecat.com/privacy-policy\">RevenueCat’s privacy policy</a>, <a href=\"https://www.apple.com/legal/privacy/\">Apple’s privacy policy</a>, and <a href=\"https://policies.google.com/privacy\">Google’s privacy policy</a>.</p>"
+      ],
+      [
+        "children",
+        "4. Children’s privacy",
+        "<p>Multiplying Panda is an educational game for children. The current app does not ask children for their name, email address, birth date, photos, contacts, or precise location. It has no chat, public profiles, advertising SDKs, or third-party gameplay-analytics SDKs. The purchase-service processing described above is separate from locally stored practice progress.</p><p>Parents and guardians can manage notifications, purchases, and device access. They can also contact the operator to ask about information processed through the service, request access or deletion where applicable, or report information they believe a child has shared inappropriately. Please do not send a child’s unnecessary personal information in a support request.</p><p>Where a proposed use of children’s information requires parental notice or consent, that requirement must be met before the use begins. This policy does not treat a child’s use of the app as parental consent.</p>"
+      ],
+      [
+        "notifications",
+        "5. Optional reminders and permissions",
+        "<p>Daily reminders are optional. If enabled, reminders are scheduled locally through the operating system. You can disable them in the app or in your device’s notification settings. The app does not need access to a contact list, camera, microphone, or precise location for its learning features.</p>"
+      ],
+      [
+        "website-support",
+        "6. Website visits and support",
+        "<p>This website does not include analytics scripts, advertising pixels, third-party fonts, contact forms, or embedded third-party media. It does not set its own cookies or use browser storage.</p><p>{{hostingPrivacy}}</p><p>If you contact the operator by email, your email address and the information you choose to send are used to respond and resolve the enquiry. Avoid sending payment-card information, passwords, or unnecessary information about a child.</p>"
+      ],
+      [
+        "sharing",
+        "7. Use and sharing",
+        "<p>Information is used to provide the app, maintain purchase access, respond to enquiries, protect the service, and meet applicable legal obligations. We do not sell information or use it for targeted advertising.</p><p>Purchase providers, a website hosting provider, or a support email provider may process relevant information to provide their services. Information may also be disclosed where required by law or necessary to address fraud or protect legal rights. Providers may process information in countries other than your own; their privacy information explains their processing locations and safeguards.</p>"
+      ],
+      [
+        "retention-deletion",
+        "8. Retention, reset, and deletion",
+        "<p>Local game progress remains on the device until it is reset, removed, or replaced. Use Settings → Reset progress to reset gameplay. Language and sound preferences remain. If saved-game recovery creates a backup, that backup can remain in app storage. Uninstalling the app or clearing its data removes local app data, subject to operating-system backup behavior.</p><p>Resetting progress does not cancel a purchase, remove purchase history from Apple or Google, or automatically delete RevenueCat records. Purchase records may be retained to provide restoration, prevent fraud, and meet legal obligations. Support correspondence is kept while needed to resolve the enquiry and meet applicable obligations. Contact the operator to request deletion of information under its control; some store or provider records must be handled directly with that provider.</p>"
+      ],
+      [
+        "choices-rights",
+        "9. Your choices and rights",
+        "<p>Depending on where you live, you may have rights to access, correct, delete, or receive a copy of personal information, restrict or object to processing, or withdraw consent where processing relies on it. Parents or guardians may exercise applicable rights for their child. Contact the operator using the details above; we may need proportionate information to verify a request.</p><p>You may also contact the relevant privacy regulator. Nothing in this policy limits rights provided by applicable law. No online service or device storage can be guaranteed completely secure.</p>"
+      ],
+      [
+        "updates",
+        "10. Changes to this policy",
+        "<p>We will update this page when the app’s practices change. The date above identifies the latest revision. Where required, we will provide additional notice or obtain consent before materially changing how information is used.</p>"
+      ]
+    ]
+  },
+  "terms": {
+    "title": "Terms & conditions",
+    "intro": "The terms for using Multiplying Panda, its optional paid features, and this companion website.",
+    "sections": [
+      [
+        "agreement",
+        "1. These terms",
+        "<p>These terms apply to your use of Multiplying Panda and this website. The operator is identified below. If a child uses the app, a parent or guardian should review these terms and supervise purchases and use as appropriate.</p>{{operator}}<p>Use the app only where you can enter a valid agreement under applicable law, or with the involvement of an authorised parent or guardian. If you do not agree, do not use the app.</p>"
+      ],
+      [
+        "learning",
+        "2. Educational use",
+        "<p>The app provides short math-practice sessions and a virtual panda companion. It is a practice tool, not a replacement for teaching or professional educational advice. Learning outcomes depend on individual circumstances and are not guaranteed.</p><p>Device requirements, languages, features, and availability may change. Core practice can use local game data; downloads, purchase verification, restoration, and some store services require an internet connection.</p>"
+      ],
+      [
+        "licence",
+        "3. Permission to use the app",
+        "<p>You may use the app for lawful, personal, non-commercial purposes on compatible devices, subject to the applicable app-store licence and usage rules. The app, artwork, sounds, branding, and other content remain owned by their respective rights holders.</p><p>Do not redistribute the app, sell copies, misuse its services, interfere with security, or copy protected content without permission. Restrictions do not apply where applicable law or an included open-source licence gives you rights that cannot be excluded.</p>"
+      ],
+      [
+        "purchases",
+        "4. Panda Pro and purchases",
+        "<p>Panda Pro is currently offered as a one-time, non-consumable purchase that unlocks additional shop items. Stars and hearts are still required for the relevant in-game items. The store displays the applicable price and any taxes before you confirm a purchase. A parent or guardian should authorise purchases for children.</p><p>There is no recurring subscription for the current lifetime offer. “Lifetime” means access to the purchased features for the supported life of this app; it is not a promise of perpetual operation, perpetual updates, or access to every future product. This description does not limit mandatory consumer rights.</p><p>Payments and refund requests are governed by the relevant store’s rules and applicable law. We do not exclude any statutory right to a refund or other remedy. Use Settings → Panda Pro → Restore purchases with the relevant store account to restore eligible access. Purchases do not automatically transfer between Apple and Google accounts.</p>"
+      ],
+      [
+        "virtual-items",
+        "5. Stars, hearts, and virtual items",
+        "<p>Stars, hearts, food, accessories, and trophies are virtual game features. They have no cash value and cannot be exchanged for money, traded, or transferred between users. The developer may adjust the game economy and features, subject to applicable consumer law and any rights attached to paid purchases.</p><p>Buying an accessory with in-game hearts adds it to the local collection. Selecting an owned item does not require another in-game purchase, and selecting an item of the same type replaces the currently equipped item.</p>"
+      ],
+      [
+        "saves",
+        "6. Saved progress",
+        "<p>Game progress is stored locally, without an app-managed account or cloud-sync service. Resetting progress, clearing app data, uninstalling, changing devices, or losing a device can remove progress. Device backup behavior depends on the operating system and settings. Restoring a store purchase does not restore locally earned stars, hearts, trophies, or a saved practice session.</p>"
+      ],
+      [
+        "privacy",
+        "7. Privacy and reminders",
+        "<p>The <a href=\"../privacy-policy/\">privacy policy</a> explains local game records, purchase providers, optional reminders, website visits, and privacy choices. You can control app sounds and optional reminders in Settings. Device-level permissions may also need to be changed in the operating system.</p>"
+      ],
+      [
+        "availability",
+        "8. Availability and changes",
+        "<p>We may update features, correct errors, or suspend functionality when necessary for maintenance, security, legal requirements, or circumstances outside our control. Reasonable notice will be provided where required. We cannot guarantee uninterrupted service or compatibility with every future device or operating-system version.</p><p>If an app or service is discontinued, obligations concerning paid features, refunds, or notice remain subject to applicable law.</p>"
+      ],
+      [
+        "responsibility",
+        "9. Responsibility and consumer rights",
+        "<p>To the extent permitted by law, the app and website are provided on an “as available” basis. We do not promise that every error will be prevented or that all local progress can be recovered.</p><p>Nothing in these terms excludes liability or limits warranties, remedies, or consumer rights that cannot lawfully be excluded or limited. This includes rights arising under the mandatory laws of the country where you live.</p>"
+      ],
+      [
+        "stores",
+        "10. Apple and Google",
+        "<p>Apple and Google operate their respective stores and payment systems. They are not the providers of the app’s learning content or responsible for its support. Applicable store terms and mandatory consumer protections continue to apply.</p><p>For an iPhone download, Apple’s <a href=\"https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\">Standard Licensed Application End User License Agreement</a> applies where the App Store supplies that agreement. These terms supplement the applicable store licence; they do not replace non-excludable store obligations or consumer rights.</p>"
+      ],
+      [
+        "changes-contact",
+        "11. Changes and contact",
+        "<p>Updated terms will be posted here with a revised date. Material changes will be communicated when legally required. A later version does not remove rights that already apply to a completed purchase. Contact the operator above for app support, questions about these terms, or concerns about a purchase.</p>"
+      ]
+    ]
+  }
+}

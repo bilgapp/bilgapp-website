@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fffbf1" />
+    <meta name="description" content="{{description}}" />
+    <title>{{title}}</title>
+    <link rel="icon" type="image/svg+xml" href="{{assets}}bilgapp-mark.svg" />
+    <link rel="stylesheet" href="{{assets}}../styles.css" />
+    {{metadata}}
+  </head>
+  <body class="company-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header wrap">
+      <a class="brand company-brand" href="./" aria-label="Bilgapp home"
+        ><span class="company-mark" aria-hidden="true">b.</span
+        ><span>bilgapp</span></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="#expertise">Expertise</a><a href="#approach">Approach</a
+        ><a class="nav-install" href="#connect"
+          >Connect <span aria-hidden="true">↗</span></a
+        >
+      </nav>
+    </header>
+    <main id="main">{{content}}</main>
+    <footer class="site-footer wrap">
+      <div class="footer-top">
+        <a class="brand company-brand" href="./"
+          ><span class="company-mark" aria-hidden="true">b.</span
+          ><span>bilgapp</span></a
+        >
+        <p>Useful software. Thoughtfully built.</p>
+      </div>
+      <div class="footer-bottom">
+        <small>© {{year}} Bilgapp</small>
+        <nav aria-label="Footer navigation">
+          <a href="#expertise">Expertise</a><a href="#approach">Our approach</a
+          ><a href="https://github.com/bilgapp">GitHub</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

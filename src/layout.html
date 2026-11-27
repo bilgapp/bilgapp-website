@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fffbf1" />
+    <meta name="description" content="{{description}}" />
+    <title>{{title}}</title>
+    <link rel="icon" type="image/png" href="{{assets}}app-icon.png" />
+    <link rel="stylesheet" href="{{assets}}../styles.css" />
+    {{metadata}}
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header wrap">
+      <a class="brand" href="{{root}}" aria-label="Multiplying Panda home">
+        <img src="{{assets}}app-icon.png" width="44" height="44" alt="" />
+        <span>Multiplying<span class="brand-second"> Panda</span></span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="{{root}}privacy-policy/" {{privacy-current}}>Privacy</a>
+        <a href="{{root}}terms/" {{terms-current}}>Terms</a>
+        <a class="nav-install" href="{{root}}#download"
+          >Get the app <span aria-hidden="true">↗</span></a
+        >
+      </nav>
+    </header>
+    <main id="main">{{content}}</main>
+    <footer class="site-footer wrap">
+      <div class="footer-top">
+        <a class="brand" href="{{root}}"
+          ><img
+            src="{{assets}}app-icon.png"
+            width="36"
+            height="36"
+            alt=""
+          /><span>Multiplying Panda</span></a
+        >
+        <p>A little practice, every day.</p>
+      </div>
+      <div class="footer-bottom">
+        <small>© {{year}} {{copyright}}</small>
+        <nav aria-label="Footer navigation">
+          <a href="{{root}}privacy-policy/">Privacy policy</a
+          ><a href="{{root}}terms/">Terms &amp; conditions</a>{{contact}}
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
