@@ -1124,95 +1124,66 @@ h1 span {
   }
 }
 
-.company-connect.company-contact {
-  display: grid;
-  grid-template-columns: 1.05fr 1fr;
-  gap: 70px;
-  align-items: start;
+.company-contact-row {
+  padding-block: 36px;
 }
-.company-contact .company-email {
-  display: inline-flex;
-  align-items: center;
-  gap: 13px;
-  margin-top: 22px;
-  color: var(--navy);
-  font-size: 24px;
-  font-weight: 800;
-  letter-spacing: -0.025em;
-  text-decoration: none;
-}
-.company-email:hover {
-  text-decoration: underline;
-}
-.company-email > svg {
-  width: 24px;
-  height: 24px;
-  flex-shrink: 0;
-}
-.company-social-panel h3 {
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-.company-socials {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.company-socials li {
+.contact-links {
   display: flex;
   align-items: center;
-  gap: 13px;
-  border-top: 1px solid var(--line);
-  padding: 13px 0;
+  gap: 16px;
+  flex-wrap: nowrap;
 }
-.social-mark {
-  display: grid;
-  place-items: center;
-  width: 34px;
-  height: 34px;
+.contact-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
-  border-radius: 8px;
-  background: #eaf0e2;
+  gap: 12px;
+  min-width: 48px;
+  height: 48px;
+  padding: 12px;
   color: var(--navy);
-  font-family: system-ui, sans-serif;
+  background: #eaf0e2;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.contact-item svg {
+  width: 23px;
+  height: 23px;
+  flex-shrink: 0;
+}
+.contact-email {
+  font-size: 16px;
   font-weight: 750;
-  font-size: 24px;
+  padding-inline: 16px;
+}
+.contact-email:hover {
+  background: #dfe8d4;
+  color: var(--navy);
+}
+.contact-facebook,
+.contact-x {
+  font-family: system-ui, sans-serif;
+  font-size: 26px;
+  font-weight: 750;
   line-height: 1;
 }
-.social-mark svg {
-  width: 21px;
-  height: 21px;
-}
-.social-mark.social-x {
-  font-size: 18px;
+.contact-x {
+  font-size: 19px;
   font-weight: 600;
 }
-.social-name {
-  font-weight: 750;
-  font-size: 15px;
+.social-placeholder {
+  cursor: default;
 }
-.social-status {
-  margin-left: auto;
-  font-size: 11px;
-  color: var(--muted);
-  border: 1px solid var(--line);
-  border-radius: 20px;
-  padding: 3px 9px;
-  white-space: nowrap;
-}
-@media (max-width: 700px) {
-  .company-connect.company-contact {
-    grid-template-columns: 1fr;
-    gap: 32px;
+@media (max-width: 480px) {
+  .contact-email-label {
+    display: none;
   }
-  .company-contact .company-email {
-    font-size: 23px;
+  .contact-email {
+    padding: 12px;
   }
-  .company-social-panel {
-    width: 100%;
-  }
-  .company-page .site-header .company-contact-nav {
-    display: inline-block;
+  .company-contact-row {
+    padding-block: 28px;
   }
 }
 @media (max-width: 380px) {

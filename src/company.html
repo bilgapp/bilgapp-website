@@ -110,14 +110,16 @@
 </section>
 <section
   id="connect"
-  class="company-connect company-contact wrap"
-  aria-labelledby="contact-title"
+  class="company-contact-row wrap"
+  aria-label="Contact Bilgapp"
 >
-  <div>
-    <p class="eyebrow">CONTACT BILGAPP</p>
-    <h2 id="contact-title">Let’s talk.</h2>
-    <p>Questions about Bilgapp or our software? Send us an email.</p>
-    <a class="company-email" href="mailto:hello@bilgapp.com">
+  <nav class="contact-links" aria-label="Email and social accounts">
+    <a
+      class="contact-item contact-email"
+      href="mailto:hello@bilgapp.com"
+      aria-label="Email Bilgapp at hello@bilgapp.com"
+      title="hello@bilgapp.com"
+    >
       <svg
         viewBox="0 0 24 24"
         fill="none"
@@ -128,42 +130,42 @@
         <rect x="3" y="5" width="18" height="14" rx="3" />
         <path d="m4 7 8 6 8-6" />
       </svg>
-      hello@bilgapp.com
+      <span class="contact-email-label">hello@bilgapp.com</span>
     </a>
-  </div>
-  <div class="company-social-panel">
-    <h3>Social accounts</h3>
-    <ul class="company-socials" aria-label="Social accounts coming soon">
-      <li>
-        <span class="social-mark" aria-hidden="true">f</span
-        ><span class="social-name">Facebook</span
-        ><span class="social-status">Coming soon</span>
-      </li>
-      <li>
-        <span class="social-mark social-x" aria-hidden="true">X</span
-        ><span class="social-name">X</span
-        ><span class="social-status">Coming soon</span>
-      </li>
-      <li>
-        <span class="social-mark" aria-hidden="true"
-          ><svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.6"
-          >
-            <rect x="3" y="3" width="18" height="18" rx="5" />
-            <circle cx="12" cy="12" r="4" />
-            <circle
-              cx="17.5"
-              cy="6.5"
-              r=".8"
-              fill="currentColor"
-              stroke="none"
-            /></svg></span
-        ><span class="social-name">Instagram</span
-        ><span class="social-status">Coming soon</span>
-      </li>
-    </ul>
-  </div>
+    <span
+      class="contact-item social-placeholder"
+      role="link"
+      aria-disabled="true"
+      aria-label="Facebook (coming soon)"
+      title="Facebook (coming soon)"
+      ><span class="contact-facebook" aria-hidden="true">f</span></span
+    >
+    <span
+      class="contact-item social-placeholder"
+      role="link"
+      aria-disabled="true"
+      aria-label="X (coming soon)"
+      title="X (coming soon)"
+      ><span class="contact-x" aria-hidden="true">X</span></span
+    >
+    <span
+      class="contact-item social-placeholder"
+      role="link"
+      aria-disabled="true"
+      aria-label="Instagram (coming soon)"
+      title="Instagram (coming soon)"
+    >
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.6"
+        aria-hidden="true"
+      >
+        <rect x="3" y="3" width="18" height="18" rx="5" />
+        <circle cx="12" cy="12" r="4" />
+        <circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none" />
+      </svg>
+    </span>
+  </nav>
 </section>
