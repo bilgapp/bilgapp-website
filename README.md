@@ -1,6 +1,6 @@
 # Bilgapp website
 
-A responsive company website for Bilgapp, with a separate, unlisted Multiplying Panda app section. The company homepage describes mobile and web software development. The app section retains its existing icon, Nunito typeface, cream/navy/green palette, actual practice screenshot, install page, and legal documents.
+A responsive company website for Bilgapp, with a separate, unlisted Multiplying Panda app section. The company homepage describes mobile and web software development, includes `hello@bilgapp.com` as a contact, and shows unlinked placeholders for Facebook, X, and Instagram. The app section retains its existing icon, Nunito typeface, cream/navy/green palette, actual practice screenshot, install page, and legal documents.
 
 This is a separate repository from the Flutter app. No app files are changed. No runtime JavaScript, tracking scripts, external fonts, cookies, or frontend dependencies are required.
 

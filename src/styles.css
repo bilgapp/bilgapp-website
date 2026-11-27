@@ -1123,3 +1123,103 @@ h1 span {
     font-size: 22px;
   }
 }
+
+.company-connect.company-contact {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 70px;
+  align-items: start;
+}
+.company-contact .company-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 13px;
+  margin-top: 22px;
+  color: var(--navy);
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  text-decoration: none;
+}
+.company-email:hover {
+  text-decoration: underline;
+}
+.company-email > svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.company-social-panel h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.company-socials {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.company-socials li {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  border-top: 1px solid var(--line);
+  padding: 13px 0;
+}
+.social-mark {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #eaf0e2;
+  color: var(--navy);
+  font-family: system-ui, sans-serif;
+  font-weight: 750;
+  font-size: 24px;
+  line-height: 1;
+}
+.social-mark svg {
+  width: 21px;
+  height: 21px;
+}
+.social-mark.social-x {
+  font-size: 18px;
+  font-weight: 600;
+}
+.social-name {
+  font-weight: 750;
+  font-size: 15px;
+}
+.social-status {
+  margin-left: auto;
+  font-size: 11px;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 3px 9px;
+  white-space: nowrap;
+}
+@media (max-width: 700px) {
+  .company-connect.company-contact {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .company-contact .company-email {
+    font-size: 23px;
+  }
+  .company-social-panel {
+    width: 100%;
+  }
+  .company-page .site-header .company-contact-nav {
+    display: inline-block;
+  }
+}
+@media (max-width: 380px) {
+  .company-page .site-header nav {
+    gap: 10px;
+  }
+  .company-page .site-header nav a {
+    font-size: 10px;
+  }
+}
