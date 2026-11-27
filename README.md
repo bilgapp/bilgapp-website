@@ -70,6 +70,47 @@ Run the release build, then serve the contents of `dist/` on any static HTTPS ho
 
 The website itself adds no cookies or analytics. A host may still process IP addresses and request logs; document its actual practices in the policy before publication.
 
+## Cloudflare Workers deployment
+
+The site is generated into **`dist/`**, not the repository root. `wrangler.jsonc`
+points Cloudflare to that directory, with directory-style HTML routing and real
+404s for missing assets. The Worker name is `bilgapp-website`. Existing custom
+domain and DNS settings are not changed by this repository configuration.
+
+Workers Builds installs dependencies from the committed npm lockfile. The npm
+`prepare` lifecycle runs the Python generator during installation, so an empty
+Cloudflare build command can still use the existing `npx wrangler deploy`
+deploy command. An explicit **Build command: `npm run build`** is also supported
+and recommended; keep **Root directory: `/`** (the repository root).
+
+The Wrangler custom build command covers local `wrangler dev` and `wrangler
+deploy`. Cloudflare currently documents that Workers Builds does not honor that
+custom-build setting, so the npm installation lifecycle supplies the build for
+the existing dashboard configuration instead of relying on Wrangler alone.
+If automatic dependency installation or npm lifecycle scripts are disabled,
+set the dashboard Build command explicitly to `npm ci && npm run build`.
+
+```sh
+npm ci
+npm run check
+npx wrangler deploy --dry-run --outdir artifacts/cloudflare-dry-run
+```
+
+For an authenticated manual deployment, use `npm run deploy`. Wrangler is pinned
+as a development-only dependency. `.npmrc` and the lockfile use the public npm
+registry, so installs do not depend on a private developer registry. The
+published website still has no runtime
+JavaScript or dependencies. Python 3.10+ is needed only while generating pages.
+
+The tracked `.assetsignore` is copied to `dist/.assetsignore`, where Wrangler
+actually reads it. Only generated pages and their assets are published; source,
+configuration, Git metadata, README files, and local artifacts stay outside the
+asset directory. Do **not** change `assets.directory` to `./`.
+
+References: [Workers Builds configuration](https://developers.cloudflare.com/workers/ci-cd/builds/configuration/),
+[Wrangler custom builds](https://developers.cloudflare.com/workers/wrangler/custom-builds/),
+and [static asset configuration](https://developers.cloudflare.com/workers/static-assets/binding/).
+
 ## Validation
 
 ```sh

@@ -1,0 +1,17 @@
+.DS_Store
+**/.DS_Store
+.git
+.git/**
+.gitignore
+.npmrc
+.env
+.env.*
+README.md
+**/README.md
+wrangler.jsonc
+package.json
+package-lock.json
+node_modules/**
+scripts/**
+src/**
+config/**

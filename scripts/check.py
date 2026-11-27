@@ -63,6 +63,12 @@ def crawl(folder):
 def main():
     assert (ROOT / 'dist/index.html').exists(), 'Run scripts/build.py first'
     count = crawl(ROOT / 'dist')
+    deployment = json.loads((ROOT / 'wrangler.jsonc').read_text())
+    lock = json.loads((ROOT / 'package-lock.json').read_text())
+    assert all(urlsplit(package['resolved']).hostname == 'registry.npmjs.org' for package in lock['packages'].values() if package.get('resolved')), 'Deployment dependencies must use the public npm registry'
+    assert deployment['assets']['directory'] == './dist', 'Only generated website files may be deployed'
+    assert (ROOT / 'dist/.assetsignore').read_text() == (ROOT / '.assetsignore').read_text()
+    assert not any((ROOT / 'dist' / name).exists() for name in ['README.md', 'scripts', 'src', 'config', 'package.json', '.git']), 'Repository files leaked into static output'
     company = (ROOT / 'dist/index.html').read_text()
     assert 'Bilgapp' in company
     assert 'multiplying-panda' not in company.lower() and 'multiplying panda' not in company.lower(), 'App must not be linked or advertised from the company homepage'
@@ -84,6 +90,7 @@ def main():
         fixture = Path(directory)
         for name in ['scripts', 'src', 'assets', 'config']:
             shutil.copytree(ROOT / name, fixture / name)
+        shutil.copyfile(ROOT / '.assetsignore', fixture / '.assetsignore')
         # Synthetic release configuration exists only in this disposable test.
         ready = {**config, 'siteUrl': 'https://example.invalid/panda', 'operatorName': 'Test operator', 'operatorAddress': 'Test address', 'operatorPhone': '+1 555 0100', 'supportEmail': 'test@example.invalid', 'hostingPrivacy': 'Synthetic test hosting statement.', 'appStoreUrl': 'https://apps.apple.com/app/id123456789', 'googlePlayUrl': 'https://play.google.com/store/apps/details?id=test.example.panda'}
         (fixture / 'config/site.json').write_text(json.dumps(ready))

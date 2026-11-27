@@ -1,0 +1,16 @@
+{
+  "name": "bilgapp-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bilgapp company website and unlisted Multiplying Panda app pages",
+  "scripts": {
+    "build": "python3 scripts/build.py",
+    "check": "python3 scripts/check.py",
+    "prepare": "npm run build",
+    "deploy": "npm run build && wrangler deploy",
+    "preview": "wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "4.168.0"
+  }
+}

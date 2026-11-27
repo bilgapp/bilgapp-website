@@ -39,8 +39,10 @@ def build(release=False):
     if output.exists():
         shutil.rmtree(output)
     output.mkdir()
-    shutil.copytree(ROOT / 'assets', output / 'assets', ignore=shutil.ignore_patterns('README.md'))
+    shutil.copytree(ROOT / 'assets', output / 'assets', ignore=shutil.ignore_patterns('README.md', '.DS_Store', '__pycache__', '*.pyc'))
     shutil.copyfile(ROOT / 'src/styles.css', output / 'styles.css')
+    # Wrangler reads exclusions from the root of the generated asset directory.
+    shutil.copyfile(ROOT / '.assetsignore', output / '.assetsignore')
     layout = (ROOT / 'src/layout.html').read_text()
     legal = json.loads((ROOT / 'src/legal.json').read_text())
     root_url = config['siteUrl'].rstrip('/')
